@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: #fff;
+  width: 85%;
+  border-radius: 1.5rem;
+  padding: 10rem 2rem 3rem 2rem;
+  text-align: center;
+  background-image: url(./images/bg-pattern-mobile.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.desktop-img {
+  display: none;
+}
+
+.mobile-img {
+  position: absolute;
+  top: -105px;
+  left: 13px;
+}
+
+.container h1 {
+  font-size: 3rem;
+  color: hsl(238, 29%, 16%);
+  padding-bottom: .5rem;
+}
+
+.faq {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  text-align: left;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.faq * {
+  pointer-events: none;
+}
+
+.faq:hover {
+  cursor: pointer;
+}
+
+.faq:hover p {
+  color: hsl(14, 88%, 65%);
+}
+
+.faq img {
+  width: 12px;
+  height: 8px;
+}
+
+.faq img:hover {
+  cursor: pointer;
+}
+
+.faq p {
+  color: hsl(240, 6%, 50%);
+}
+
+.faq .answer {
+  display: none;
+}
+
+.faq.open:hover .question {
+  color: hsl(238, 29%, 16%);
+}
+
+.faq.open:hover .answer {
+  color: hsl(240, 6%, 50%);
+}
+
+.faq.open .question {
+  font-weight: 700;
+  color: hsl(237, 12%, 33%);
+  margin-bottom: 1rem;
+}
+
+.faq.open img {
+  transform: rotate(180deg);
+}
+
+.faq.open .answer {
+  display: block;
+}
+
+@media only screen and (min-width: 900px) {
+  .container {
+    flex-direction: row;
+    padding: 4rem;
+    background-image: url(./images/illustration-woman-online-desktop.svg), url(./images/bg-pattern-desktop.svg);
+    background-position: left -50px bottom 80px, left -300px bottom -50px;
+    background-size: 350px 270px, 600px 600px;
+    width: 70%;
+  }
+
+  .faq-section-wrapper {
+    height: 100%;
+    width: 50%;
+    text-align: left;
+  }
+
+  .faq-section-wrapper h1 {
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .desktop-img {
+    display: block;
+    position: absolute;
+    left: -120px;
+    bottom: 100px;
+  }
+}
