@@ -15,7 +15,12 @@ function validateEmail() {
     emailInput.classList.remove('error')
     errorMessage.classList.add('hide')
     alert(`Thank you! Email notifications will be sent to ${email}`)
+  } else if (email === '') {
+    errorMessage.innerText = 'Email must not be blank'
+    emailInput.classList.add('error')
+    errorMessage.classList.remove('hide')
   } else {
+    errorMessage.innerText = 'Please Provide a valid email address'
     emailInput.classList.add('error')
     errorMessage.classList.remove('hide')
   }
