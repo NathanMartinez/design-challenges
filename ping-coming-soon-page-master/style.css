@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: 'Libre Franklin', sans-serif;
   font-size: 20px;
+  outline: none;
 }
 
 body {
@@ -54,13 +55,58 @@ input {
   margin-bottom: .5rem;
 }
 
+input.error {
+  border: 1px solid hsl(354, 100%, 66%);
+}
+
+p.error {
+  font-size: .6rem;
+  font-style: italic;
+  color: hsl(354, 100%, 66%);
+}
+
 button {
   color: #fff;
   border: none;
   background: hsl(223, 87%, 63%);
   font-weight: 600;
+  margin-bottom: 3rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 .mobile-chart {
+  width: 90%;
+  margin-bottom: 5rem;
+}
+
+.social-media-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+}
+
+.social-icon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 25px;
+  border: 1px solid hsl(223, 100%, 88%);
+}
+
+.social-icon-div i {
+  color: hsl(223, 87%, 63%);
+  font-size: .8rem;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: .5rem;
+  color: hsl(0, 0%, 59%);
+}
+
+.hide {
   display: none;
 }
