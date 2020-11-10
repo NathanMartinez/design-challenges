@@ -75,6 +75,11 @@ body {
   outline: none;
 }
 
+.sign-up-container button:hover {
+  cursor: pointer;
+  opacity: .9;
+}
+
 .why-us-container {
   background: hsl(179, 52%, 42%);
   padding: 2rem 1rem;
