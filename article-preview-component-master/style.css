@@ -25,13 +25,14 @@ body {
 }
 
 .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   background: #fff;
   width: 90%;
   border-radius: 1rem;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
 }
 
 .img-div {
@@ -105,6 +106,114 @@ body {
   pointer-events: none;
 }
 
-.user-info-div.active {
+.active-share-div {
+  position: absolute;
+  bottom: -80px;
+  width: 100%;
   background: var(--very_dark_grayish_blue);
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 2.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.active-share-div h1 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: var(--grayish_blue);
+  letter-spacing: .5rem;
+  margin: .5rem 1rem .5rem 0;
+}
+
+.social-media-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80px;
+  margin-right: 60px;
+}
+
+.social-media-wrapper img:hover {
+  cursor: pointer;
+}
+
+.active-share-div .share-div {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  background: var(--grayish_blue);
+  margin-left: auto;
+}
+
+.share-div:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+.active-share-div .share-div img {
+  width: 1.5rem;
+  height: 1.3rem;
+  position: absolute;
+  top: .7rem;
+  left: .7rem;
+  pointer-events: none;
+}
+
+.active {
+  transform: translateY(-80px);
+}
+
+@media only screen and (min-width: 800px) {
+  .container {
+    width: 800px;
+    max-width: 80%;
+    flex-direction: row;
+    height: 300px;
+    overflow: visible;
+  }
+
+  .img-div {
+    background-size: cover;
+    width: 400px;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  .content-container {
+    width: 700px;
+  }
+
+  .text-container {
+    padding: 3rem 3.5rem 0 3rem;
+  }
+
+  .text-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .active-share-div {
+    position: absolute;
+    bottom: 90px;
+    right: -40px;
+    transform: translateX(1000px);
+    width: 200px;
+    height: 50px;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .social-media-wrapper {
+    margin: 0;
+  }
+
+  .active-share-div .share-div {
+    display: none;
+  }
+
+  .active {
+    transform: translateX(0);
+  }
+
 }
