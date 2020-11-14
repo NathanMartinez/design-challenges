@@ -1,0 +1,12 @@
+import React from "react";
+
+function HeaderText(props) {
+  return (
+    <div className="header-text">
+      <h1> Social Media Dashboard </h1>
+      <p> Total Followers: 100,000,000 </p>
+    </div>
+  );
+}
+
+export default HeaderText;

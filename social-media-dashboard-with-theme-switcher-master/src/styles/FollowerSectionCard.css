@@ -1,0 +1,68 @@
+.follower-section-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-radius: .5rem;
+  border-top: 4px solid var(--facebook);
+  margin: 1rem 0;
+  background: var(--light_grayish_blue_card_bg);
+  padding: 2rem;
+}
+
+.icon-username-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon-username-container img {
+  margin-right: .5rem;
+}
+
+.icon-username-container p {
+  font-size: .8rem;
+  font-weight: 700;
+  color: var(--dark_grayish_blue_text);
+}
+
+.follower-count-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: .5rem 0;
+}
+
+.follower-count-container h1 {
+  font-size: 3.5rem;
+}
+
+.follower-count-container h4 {
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  font-weight: 400;
+  color: var(--dark_grayish_blue_text);
+}
+
+.update-info {
+  display: flex;
+  align-items: center;
+}
+
+.update-info img {
+  margin-right: .3rem;
+  height: .3rem;
+}
+
+.update-info p {
+  color: var(--lime_green);
+  font-weight: 700;
+}
+
+.follower-section-card.dark-mode {
+  background: var(--dark_desaturated_blue_card_bg);
+}
+
+.follower-section-card.dark-mode .update-info p {
+  color: var(--lime_green);
+}

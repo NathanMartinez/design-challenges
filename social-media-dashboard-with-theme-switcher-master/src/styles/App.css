@@ -1,0 +1,10 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.App.dark-mode {
+  color: #fff;
+  background: var(--very_dark_blue_bg);
+}
