@@ -45,3 +45,24 @@
 .overview-card.dark-mode .stats h1 {
   color: #fff;
 }
+
+@media only screen and (min-width: 1100px) {
+  .overview-card {
+    height: 200px;
+    padding: 1.5rem 2rem;
+    margin: 0;
+  }
+
+  #platform-icon {
+    width: 2rem;
+    margin-left: auto;
+  }
+
+  .stats p {
+    font-size: 1.2rem;
+  }
+
+  .stats h1 {
+    font-size: 3.5rem;
+  }
+}

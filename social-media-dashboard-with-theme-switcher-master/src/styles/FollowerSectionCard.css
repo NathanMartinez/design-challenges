@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   border-radius: var(--main_border_radius);
   margin: 1.5rem 0;
   background: var(--light_grayish_blue_card_bg);

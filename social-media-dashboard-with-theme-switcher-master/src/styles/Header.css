@@ -22,3 +22,16 @@
 .Header.dark-mode p {
   color: var(--desaturated_blue_text);
 }
+
+@media only screen and (min-width: 1100px) {
+  .Header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+
+  .header-text,
+  .Header.dark-mode .header-text {
+    border-bottom: none;
+  }
+}

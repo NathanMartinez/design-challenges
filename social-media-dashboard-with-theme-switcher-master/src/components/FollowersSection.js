@@ -1,10 +1,11 @@
 import React from "react";
+import "../styles/FollowerSection.css";
 import FollowerSectionCard from "./FollowerSectionCard";
 
 function FollowersSection({ darkMode, setDarkMode }) {
   return (
     <div
-      className={darkMode ? "follwers-section dark-mode" : "followers-section"}
+      className={darkMode ? "followers-section dark-mode" : "followers-section"}
     >
       <FollowerSectionCard
         darkMode={darkMode}
