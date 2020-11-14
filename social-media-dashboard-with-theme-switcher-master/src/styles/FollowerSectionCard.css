@@ -90,3 +90,8 @@
 .heading.youtube {
   background: var(--youtube);
 }
+
+.follower-section-card:hover {
+  cursor: pointer;
+  opacity: .8;
+}
