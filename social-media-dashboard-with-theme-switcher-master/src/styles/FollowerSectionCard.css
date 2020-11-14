@@ -4,10 +4,15 @@
   align-items: center;
   width: 100%;
   border-radius: .5rem;
-  border-top: 4px solid var(--facebook);
-  margin: 1rem 0;
+  margin: 2rem 0;
   background: var(--light_grayish_blue_card_bg);
-  padding: 2rem;
+  overflow: hidden;
+}
+
+.heading {
+  height: 4px;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 .icon-username-container {
@@ -29,7 +34,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: .5rem 0;
+  margin: 1rem 0 1.5rem 0;
 }
 
 .follower-count-container h1 {
@@ -47,6 +52,7 @@
 .update-info {
   display: flex;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .update-info img {
@@ -54,8 +60,13 @@
   height: .3rem;
 }
 
-.update-info p {
+.update-info.up p {
   color: var(--lime_green);
+  font-weight: 700;
+}
+
+.update-info.down p {
+  color: var(--bright_red);
   font-weight: 700;
 }
 
@@ -63,6 +74,20 @@
   background: var(--dark_desaturated_blue_card_bg);
 }
 
-.follower-section-card.dark-mode .update-info p {
-  color: var(--lime_green);
+
+
+.heading.facebook {
+  background: var(--facebook);
+}
+
+.heading.twitter {
+  background: var(--twitter);
+}
+
+.heading.instagram {
+  background: var(--instagram);
+}
+
+.heading.youtube {
+  background: var(--youtube);
 }
