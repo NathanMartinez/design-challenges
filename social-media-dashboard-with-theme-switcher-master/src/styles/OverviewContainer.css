@@ -1,0 +1,5 @@
+.overview-container h1 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--dark_grayish_blue_text);
+}

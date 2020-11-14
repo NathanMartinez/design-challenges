@@ -3,7 +3,6 @@ import "../styles/FollowerSectionCard.css";
 
 function FollowerSectionCard({
   darkMode,
-  setDarkMode,
   platform,
   username,
   followers,
@@ -32,7 +31,7 @@ function FollowerSectionCard({
           updateDirection === "up" ? "update-info up" : "update-info down"
         }
       >
-        <img src={`./images/icon-${updateDirection}.svg`} alt="up" />
+        <img src={`./images/icon-${updateDirection}.svg`} alt="arrow" />
         <p>{updateCount} Today</p>
       </div>
     </div>

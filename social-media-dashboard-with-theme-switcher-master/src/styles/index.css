@@ -24,6 +24,8 @@
   --light_grayish_blue_card_bg: hsl(227, 47%, 96%);
   --dark_grayish_blue_text: hsl(228, 12%, 44%);
   --very_dark_blue_text: hsl(230, 17%, 14%);
+  /* Border radius */
+  --main_border_radius: .5rem;
 }
 
 * {

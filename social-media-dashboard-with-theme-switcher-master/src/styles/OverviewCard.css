@@ -1,0 +1,47 @@
+.overview-card {
+  display: flex;
+  justify-content: space-between;
+  background: var(--light_grayish_blue_card_bg);
+  border-radius: var(--main_border_radius);
+  height: 125px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1rem;
+}
+
+.stats,
+.icon-percentage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.icon-percentage .update-info {
+  margin: 0;
+}
+
+.stats p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark_grayish_blue_text);
+}
+
+.stats h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0;
+  color: var(--very_dark_blue_text);
+}
+
+#platform-icon {
+  width: 1.5rem;
+  margin-left: auto;
+}
+
+.overview-card.dark-mode {
+  background: var(--dark_desaturated_blue_card_bg);
+}
+
+.overview-card.dark-mode .stats h1 {
+  color: #fff;
+}
