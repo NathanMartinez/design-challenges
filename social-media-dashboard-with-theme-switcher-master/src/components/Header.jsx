@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../styles/Header.css";
 import HeaderText from "./HeaderText";
 import Toggle from "./Toggle";
+import { ThemeContext } from "../Context/ThemeProvider";
 
-function Header({ darkMode, setDarkMode }) {
+function Header() {
+  const darkMode = useContext(ThemeContext);
   return (
     <div className={darkMode ? "Header dark-mode" : "Header"}>
-      <HeaderText darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Toggle darkMode={darkMode} setDarkMode={setDarkMode} />
+      <HeaderText />
+      <Toggle />
     </div>
   );
 }

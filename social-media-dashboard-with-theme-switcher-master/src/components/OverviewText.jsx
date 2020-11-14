@@ -1,6 +1,6 @@
 import React from "react";
 
-function OverviewText(props) {
+function OverviewText() {
   return (
     <div className="overview-text">
       <h1>Overview - Today</h1>

@@ -2,13 +2,12 @@ import React from "react";
 import "../styles/OverviewContainer.css";
 import OverviewCard from "./OverviewCard";
 
-function OverviewContainer({ darkMode, setDarkMode }) {
+function OverviewContainer() {
   return (
     <div className="overview-container">
       <h1> Overview - Today </h1>
       <div className="overview-card-container">
         <OverviewCard
-          darkMode={darkMode}
           text="Page Views"
           count="87"
           percentage="3"
@@ -16,7 +15,6 @@ function OverviewContainer({ darkMode, setDarkMode }) {
           platform="facebook"
         />
         <OverviewCard
-          darkMode={darkMode}
           text="Likes"
           count="52"
           percentage="2"
@@ -24,7 +22,6 @@ function OverviewContainer({ darkMode, setDarkMode }) {
           platform="facebook"
         />
         <OverviewCard
-          darkMode={darkMode}
           text="Likes"
           count="5462"
           percentage="2257"
@@ -32,7 +29,6 @@ function OverviewContainer({ darkMode, setDarkMode }) {
           platform="instagram"
         />
         <OverviewCard
-          darkMode={darkMode}
           text="Profile Views"
           count="52k"
           percentage="1375"
@@ -40,7 +36,6 @@ function OverviewContainer({ darkMode, setDarkMode }) {
           platform="instagram"
         />
         <OverviewCard
-          darkMode={darkMode}
           text="Retweets"
           count="117"
           percentage="303"
@@ -48,7 +43,6 @@ function OverviewContainer({ darkMode, setDarkMode }) {
           platform="twitter"
         />
         <OverviewCard
-          darkMode={darkMode}
           text="Likes"
           count="507"
           percentage="553"
@@ -56,7 +50,6 @@ function OverviewContainer({ darkMode, setDarkMode }) {
           platform="twitter"
         />
         <OverviewCard
-          darkMode={darkMode}
           text="Likes"
           count="107"
           percentage="19"
@@ -64,7 +57,6 @@ function OverviewContainer({ darkMode, setDarkMode }) {
           platform="youtube"
         />
         <OverviewCard
-          darkMode={darkMode}
           text="Total Views"
           count="1407"
           percentage="12"
