@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  /* Primary */
+  --Dark_cyan: hsl(185, 75%, 39%);
+  --Very_dark_desaturated_blue: hsl(229, 23%, 23%);
+  --Dark_grayish_blue: hsl(227, 10%, 46%);
+  /* Neutral */
+  --Dark_gray: hsl(0, 0%, 59%);
+  /* Font size */
+  font-size: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Dark_cyan);
+  background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: top -500px left -750px, bottom -600px right -700px;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header {
+  background-image: url(./images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.header .profile-image {
+  background-image: url(./images/image-victor.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  bottom: -60px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.content-container {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name-age {
+  display: flex;
+  align-items: center;
+  margin-bottom: .8rem;
+}
+
+.name-age h1,
+.name-age h2 {
+  font-size: 1.2rem;
+}
+
+.name-age h1 {
+  font-weight: 700;
+  margin-right: .5rem;
+  color: var(--Very_dark_desaturated_blue);
+}
+
+.name-age h2 {
+  font-weight: 400;
+  color: var(--Dark_gray);
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--Dark_gray);
+}
+
+.count-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  border-top: 1px solid var(--Dark_grayish_blue);
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.single-count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.single-count h1 {
+  font-size: 1rem;
+  margin-bottom: .5rem;
+  color: var(--Very_dark_desaturated_blue);
+}
+
+.single-count p {
+  font-size: .8rem;
+  color: var(--Dark_gray);
+}
