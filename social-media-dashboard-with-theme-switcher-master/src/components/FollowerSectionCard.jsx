@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../styles/FollowerSectionCard.css";
+import { ThemeContext } from "../Context/ThemeProvider";
 
 function FollowerSectionCard({
-  darkMode,
   platform,
   username,
   followers,
   updateDirection,
   updateCount,
 }) {
+  const darkMode = useContext(ThemeContext);
   return (
     <div
       className={

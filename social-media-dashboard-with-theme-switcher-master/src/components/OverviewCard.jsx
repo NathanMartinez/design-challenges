@@ -1,14 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../styles/OverviewCard.css";
+import { ThemeContext } from "../Context/ThemeProvider";
 
-function OverviewCard({
-  darkMode,
-  text,
-  count,
-  percentage,
-  updateDirection,
-  platform,
-}) {
+function OverviewCard({ text, count, percentage, updateDirection, platform }) {
+  const darkMode = useContext(ThemeContext);
   return (
     <div className={darkMode ? "overview-card dark-mode" : "overview-card"}>
       <div className="stats">

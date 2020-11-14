@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../styles/FollowerSection.css";
 import FollowerSectionCard from "./FollowerSectionCard";
+import { ThemeContext } from "../Context/ThemeProvider";
 
-function FollowersSection({ darkMode, setDarkMode }) {
+function FollowersSection() {
+  const darkMode = useContext(ThemeContext);
   return (
     <div
       className={darkMode ? "followers-section dark-mode" : "followers-section"}
     >
       <FollowerSectionCard
-        darkMode={darkMode}
         platform="facebook"
         username="@natem"
         followers="1987"
@@ -16,7 +17,6 @@ function FollowersSection({ darkMode, setDarkMode }) {
         updateCount="12"
       />
       <FollowerSectionCard
-        darkMode={darkMode}
         platform="twitter"
         username="@natem"
         followers="1044"
@@ -24,7 +24,6 @@ function FollowersSection({ darkMode, setDarkMode }) {
         updateCount="99"
       />
       <FollowerSectionCard
-        darkMode={darkMode}
         platform="instagram"
         username="@realnatem"
         followers="11k"
@@ -32,7 +31,6 @@ function FollowersSection({ darkMode, setDarkMode }) {
         updateCount="1099"
       />
       <FollowerSectionCard
-        darkMode={darkMode}
         platform="youtube"
         username="Nathan M."
         followers="8239"
