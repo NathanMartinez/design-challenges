@@ -22,12 +22,12 @@ body {
           flex-direction: column;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 550px) {
   .App {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 60% auto;
-        grid-template-columns: 60% auto;
+    -ms-grid-columns: 55% auto;
+        grid-template-columns: 55% auto;
     -ms-grid-rows: 10% auto;
         grid-template-rows: 10% auto;
         grid-template-areas: "header      hero" "comingsoon hero";
@@ -42,7 +42,7 @@ body {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: comingsoon;
-    padding: 1rem;
+    padding: 5rem;
   }
   .App .coming-soon-section h1 {
     font-size: 3rem;
@@ -67,7 +67,7 @@ body {
     padding: 5rem 15rem 5rem 10rem;
   }
   .App .coming-soon-section {
-    padding: 5rem 15rem 5rem 10rem;
+    padding: 5rem 10rem;
     text-align: left;
   }
   .App .coming-soon-section h1 {
@@ -76,6 +76,9 @@ body {
   .App .coming-soon-section p {
     font-size: 1.5rem;
     line-height: 2.5rem;
+  }
+  .App .error p {
+    font-size: 1rem;
   }
 }
 
@@ -205,12 +208,12 @@ body {
 
 .email-input.error #error-icon {
   position: absolute;
-  right: 80px;
+  right: 90px;
   top: 13px;
 }
 
 .email-input.error #error-text {
-  bottom: -60px;
+  bottom: -70px;
   left: 10px;
 }
 /*# sourceMappingURL=main.css.map */

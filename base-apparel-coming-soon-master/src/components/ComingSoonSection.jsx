@@ -5,7 +5,8 @@ function ComingSoonSection() {
   return (
     <div className="coming-soon-section">
       <h1>
-        <span>We're </span>
+        <span>We're</span>
+        <br />
         Coming Soon
       </h1>
       <p>
