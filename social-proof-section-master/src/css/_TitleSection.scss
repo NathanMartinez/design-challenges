@@ -1,0 +1,19 @@
+.title-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1,
+  p {
+    max-width: 80%;
+  }
+  h1 {
+    font-size: 5rem;
+    color: $Very_Dark_Magenta;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: $Dark_Grayish_Magenta;
+  }
+}

@@ -1,0 +1,16 @@
+.rating {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  background: $Light_Grayish_Magenta;
+  .star-container {
+    .star {
+      margin-right: 0.2rem;
+    }
+    margin-right: 1rem;
+  }
+  h4 {
+    color: $Very_Dark_Magenta;
+  }
+}
