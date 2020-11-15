@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 export default function ImageSlider({ data, setJohn }) {
   return (
     <div className="image-slider">

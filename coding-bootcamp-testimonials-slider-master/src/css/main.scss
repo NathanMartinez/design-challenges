@@ -19,12 +19,13 @@ body {
   height: 100vh;
   .App {
     height: 100vh;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .image-slider {
       display: flex;
       justify-content: center;
-      width: 100%;
+      width: 90%;
       background-image: url(../images/pattern-bg.svg);
       background-repeat: no-repeat;
       background-size: contain;
@@ -73,6 +74,7 @@ body {
       }
     }
     .testimonial-section {
+      flex: 1;
       text-align: center;
       background-image: url(../images/pattern-quotes.svg),
         url(../images/pattern-curve.svg);
@@ -93,6 +95,47 @@ body {
       p {
         font-size: 0.5rem;
         color: $Grayish_Blue;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 800px) {
+  body {
+    .App {
+      height: 100vh;
+      flex-direction: row-reverse;
+      .image-slider {
+        flex: 1;
+        height: 100%;
+        align-items: center;
+        padding: 0 2rem 0 0;
+        .image-container {
+          width: 80%;
+          height: auto;
+        }
+      }
+      .testimonial-section {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        padding: 0;
+        blockquote,
+        .user-info {
+          transform: translateX(2rem);
+        }
+        blockquote {
+          font-size: 1rem;
+          width: 700px;
+          width: 115%;
+        }
+        .user-info {
+          display: flex;
+          h5 {
+            margin-right: 0.5rem;
+          }
+        }
       }
     }
   }

@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function TestimonialSection({ data }) {
   return (
     <div className="testimonial-section">
