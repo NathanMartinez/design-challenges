@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+.App {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.Header img {
+  width: 125px;
+}
+
+.coming-soon-section {
+  background: linear-gradient(135deg, white, #fff5f5);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2.5rem;
+}
+
+.coming-soon-section h1 {
+  margin: 4rem 0 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.coming-soon-section h1 span {
+  font-weight: 300;
+  color: #ce9797;
+}
+
+.coming-soon-section p {
+  color: #ce9797;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.email-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border: 1px solid #ce9797;
+  border-radius: 2rem;
+}
+
+.email-input #error-icon,
+.email-input #error-text {
+  display: none;
+}
+
+.email-input input,
+.email-input button {
+  border: none;
+  background: transparent;
+  padding: 0.8rem 1rem;
+  outline: none;
+}
+
+.email-input input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.email-input button {
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border-radius: 2rem;
+  width: 70px;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.email-input button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+.email-input.error {
+  border: 1px solid #f96262;
+  position: relative;
+}
+
+.email-input.error #error-icon,
+.email-input.error #error-text {
+  display: block;
+  color: #f96262;
+  position: absolute;
+}
+
+.email-input.error #error-icon {
+  position: absolute;
+  right: 80px;
+  top: 13px;
+}
+
+.email-input.error #error-text {
+  bottom: -60px;
+  left: 10px;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,27 @@
+@import "./variables";
+
+.coming-soon-section {
+  background: $gradient1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 0 2.5rem;
+  h1 {
+    span {
+      font-weight: 300;
+      color: $Desaturated_Red;
+    }
+    margin: 4rem 0 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 2.5rem;
+  }
+  p {
+    color: $Desaturated_Red;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,50 @@
+@import "./variables";
+.email-input {
+  display: flex;
+  width: 100%;
+  border: 1px solid $Desaturated_Red;
+  border-radius: 2rem;
+  #error-icon,
+  #error-text {
+    display: none;
+  }
+  input,
+  button {
+    border: none;
+    background: transparent;
+    padding: 0.8rem 1rem;
+    outline: none;
+  }
+  input {
+    flex: 1;
+  }
+  button {
+    background: $gradient2;
+    border-radius: 2rem;
+    width: 70px;
+    box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.2);
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 15px 15px rgba($color: #000000, $alpha: 0.2);
+    }
+  }
+}
+.email-input.error {
+  border: 1px solid $Soft_Red;
+  position: relative;
+  #error-icon,
+  #error-text {
+    display: block;
+    color: $Soft_Red;
+    position: absolute;
+  }
+  #error-icon {
+    position: absolute;
+    right: 80px;
+    top: 13px;
+  }
+  #error-text {
+    bottom: -60px;
+    left: 10px;
+  }
+}
