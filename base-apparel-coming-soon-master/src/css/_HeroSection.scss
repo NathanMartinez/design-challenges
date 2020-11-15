@@ -1,0 +1,19 @@
+.Hero-section {
+  #desktop {
+    display: none;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .Hero-section {
+    #mobile {
+      display: none;
+    }
+    #desktop {
+      display: block;
+    }
+  }
+}

@@ -22,6 +22,63 @@ body {
           flex-direction: column;
 }
 
+@media only screen and (min-width: 480px) {
+  .App {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% auto;
+        grid-template-columns: 60% auto;
+    -ms-grid-rows: 10% auto;
+        grid-template-rows: 10% auto;
+        grid-template-areas: "header      hero" "comingsoon hero";
+  }
+  .App .Header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: header;
+    padding: 2rem;
+  }
+  .App .coming-soon-section {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: comingsoon;
+    padding: 1rem;
+  }
+  .App .coming-soon-section h1 {
+    font-size: 3rem;
+  }
+  .App .coming-soon-section p {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .App .coming-soon-section button {
+    width: 80px;
+  }
+  .App .Hero-section {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: hero;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .App .Header {
+    padding: 5rem 15rem 5rem 10rem;
+  }
+  .App .coming-soon-section {
+    padding: 5rem 15rem 5rem 10rem;
+    text-align: left;
+  }
+  .App .coming-soon-section h1 {
+    font-size: 6rem;
+  }
+  .App .coming-soon-section p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+
 .Header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,6 +91,24 @@ body {
 
 .Header img {
   width: 125px;
+}
+
+.Hero-section #desktop {
+  display: none;
+}
+
+.Hero-section img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .Hero-section #mobile {
+    display: none;
+  }
+  .Hero-section #desktop {
+    display: block;
+  }
 }
 
 .coming-soon-section {

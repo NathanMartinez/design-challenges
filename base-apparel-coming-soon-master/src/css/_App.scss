@@ -3,3 +3,53 @@
   display: flex;
   flex-direction: column;
 }
+@media only screen and (min-width: 480px) {
+  .App {
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-template-rows: 10% auto;
+    grid-template-areas:
+      "header      hero"
+      "comingsoon hero";
+    .Header {
+      grid-area: header;
+      padding: 2rem;
+    }
+    .coming-soon-section {
+      grid-area: comingsoon;
+      padding: 1rem;
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1rem;
+      }
+      button {
+        width: 80px;
+      }
+    }
+    .Hero-section {
+      grid-area: hero;
+    }
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .App {
+    .Header {
+      padding: 5rem 15rem 5rem 10rem;
+    }
+    .coming-soon-section {
+      padding: 5rem 15rem 5rem 10rem;
+      text-align: left;
+      h1 {
+        font-size: 6rem;
+      }
+      p {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+      }
+    }
+  }
+}
