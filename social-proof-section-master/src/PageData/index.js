@@ -17,3 +17,19 @@ export const Comments = [{
     "quote": "Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"
   },
 ]
+export const Ratings = [{
+    "id": 0,
+    "company": "Reviews",
+    "starCount": 5
+  },
+  {
+    "id": 1,
+    "company": "Report Guru",
+    "starCount": 5
+  },
+  {
+    "id": 2,
+    "company": "BestTech",
+    "starCount": 5
+  }
+]

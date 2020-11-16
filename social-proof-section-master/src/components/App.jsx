@@ -1,6 +1,6 @@
-const { default: CommentSection } = require("./CommentSection");
-const { default: RatingSection } = require("./RatingSection");
 const { default: TitleSection } = require("./TitleSection");
+const { default: RatingSection } = require("./RatingSection");
+const { default: CommentSection } = require("./CommentSection");
 
 function App() {
   return (

@@ -1,16 +1,27 @@
 .comment-section {
-  grid-column: span 2;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 15% 15% auto 15% 15%;
-  grid-column-gap: 2rem;
-  .comment:first-child {
-    grid-row: 1 / 4;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, minmax(100px, auto));
+  grid-row-gap: 1rem;
+}
+@media only screen and (min-width: 1200px) {
+  .comment-section {
+    justify-content: space-between;
+    grid-column: span 2;
+    grid-template-columns: repeat(3, minmax(100px, 400px));
+    grid-template-rows: repeat(2, 2rem) auto repeat(2, 2rem);
+    grid-gap: 0;
+    margin: 0;
   }
-  .comment:nth-child(2) {
-    grid-row: 2 / 5;
-  }
-  .comment:last-child {
-    grid-row: 3 / 6;
+  .comment {
+    &:first-child {
+      grid-row: 1 / 4;
+    }
+    &:nth-child(2) {
+      grid-row: 2 / 5;
+    }
+    &:last-child {
+      grid-row: 3 / 6;
+    }
   }
 }

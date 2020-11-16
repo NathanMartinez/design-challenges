@@ -1,6 +1,6 @@
 import React from "react";
 import Rating from "./Rating";
-import { Ratings } from "../PageData/ratings";
+import { Ratings } from "../PageData";
 
 export default function RatingSection() {
   return (

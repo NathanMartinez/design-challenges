@@ -5,7 +5,17 @@
 @import "./Comment";
 
 .App {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, minmax(50px, auto));
+  grid-row-gap: 2rem;
+}
+@media only screen and (min-width: 1200px) {
+  .App {
+    grid-template-columns: repeat(2, minmax(50%, auto));
+    grid-template-rows: repeat(2, minmax(300px, auto));
+    grid-gap: 2rem;
+  }
 }

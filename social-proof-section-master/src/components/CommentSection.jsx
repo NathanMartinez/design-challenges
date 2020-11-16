@@ -1,6 +1,6 @@
 import React from "react";
 import Comment from "./Comment";
-import { Comments } from "../PageData/comments";
+import { Comments } from "../PageData";
 
 export default function CommentSection() {
   return (

@@ -1,16 +1,26 @@
 .rating {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 1.5rem;
-  border-radius: 0.8rem;
+  border-radius: 0.5rem;
   background: $Light_Grayish_Magenta;
   .star-container {
     .star {
       margin-right: 0.2rem;
     }
-    margin-right: 1rem;
   }
   h4 {
+    margin-top: 0.5rem;
     color: $Very_Dark_Magenta;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .rating {
+    flex-direction: row;
+    justify-content: flex-start;
+    .star-container {
+      margin: 1.5rem;
+    }
   }
 }

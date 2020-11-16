@@ -1,16 +1,22 @@
 .rating-section {
   display: grid;
-  grid-template-columns: 10% 10% auto 10% 10%;
-  grid-template-rows: repeat(3, 5rem);
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, minmax(2rem, 5rem));
   grid-row-gap: 1rem;
-  padding-top: 5rem;
-  .rating:first-child {
-    grid-column: 1 / 4;
+}
+@media only screen and (min-width: 1200px) {
+  .rating-section {
+    grid-template-columns: repeat(2, 3rem) minmax(300px, 400px) repeat(2, 3rem);
   }
-  .rating:nth-child(2) {
-    grid-column: 2 / 5;
-  }
-  .rating:last-child {
-    grid-column: 3 / 6;
+  .rating {
+    &:first-child {
+      grid-column: 1 / 4;
+    }
+    &:nth-child(2) {
+      grid-column: 2 / 5;
+    }
+    &:last-child {
+      grid-column: 3 / 6;
+    }
   }
 }
