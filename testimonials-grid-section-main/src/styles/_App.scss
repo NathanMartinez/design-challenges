@@ -1,0 +1,94 @@
+.App {
+  color: #fff;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, minmax(50px, 300px));
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "one one two three"
+    "four five five three";
+  .card {
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 20px 20px rgba($color: #000000, $alpha: 0.2);
+    &:nth-child(1) {
+      grid-area: one;
+      background: $Moderate_violet;
+    }
+    &:nth-child(2) {
+      grid-area: two;
+      background: $Very_dark_grayish_blue;
+    }
+    &:nth-child(3) {
+      grid-area: three;
+      background: $White;
+      color: $Ligh_grayish_blue;
+      color: $Very_dark_blackish_blue;
+    }
+    &:nth-child(4) {
+      grid-area: four;
+      background: $White;
+      color: $Ligh_grayish_blue;
+      color: $Very_dark_blackish_blue;
+    }
+    &:nth-child(5) {
+      grid-area: five;
+      background: $Very_dark_blackish_blue;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+      img {
+        width: 4rem;
+        border-radius: 2rem;
+        margin-right: 1rem;
+      }
+      .user-info {
+        p,
+        small {
+          font-size: 1rem;
+          font-weight: 500;
+        }
+        small {
+          color: $Light_gray;
+        }
+      }
+    }
+    h5 {
+      font-weight: 600;
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.3rem;
+    }
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .App {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    .card {
+      flex: 1;
+      min-width: 360px;
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .App {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 1rem;
+    .card {
+      min-width: 250px;
+    }
+  }
+}
