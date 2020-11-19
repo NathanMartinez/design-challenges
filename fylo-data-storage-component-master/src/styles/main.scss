@@ -1,0 +1,65 @@
+// Variables
+
+//Primary
+$Gradient: linear-gradient(to left, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+
+// Neutral
+
+$Pale_Blue: hsl(243, 100%, 93%);
+$Grayish_Blue: hsl(229, 7%, 55%);
+$Dark_Blue: hsl(228, 56%, 26%);
+$Very_Dark_Blue: hsl(229, 57%, 11%);
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+:root {
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+}
+
+@import "./FileIcon";
+@import "./FileIcons";
+@import "./FyloContainer";
+@import "./ProgressBar";
+@import "./WhatsLeft";
+@import "./StorageContainer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/bg-mobile.png) no-repeat;
+  background-size: cover;
+  padding: 2rem;
+}
+
+@media only screen and (min-width: 800px) {
+  .App {
+    flex-direction: row;
+    padding: 15%;
+  }
+  .StorageContainer {
+    height: 200px;
+    margin: 0 0 0 1rem;
+    flex: 1;
+    text-align: left;
+  }
+
+  .WhatsLeft {
+    top: -25%;
+    right: 0;
+    left: auto;
+    bottom: auto;
+  }
+}

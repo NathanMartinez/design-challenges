@@ -1,0 +1,18 @@
+.StorageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  background: $Dark_Blue;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-width: 340px;
+}
+.StorageContainer p {
+  margin-bottom: 1rem;
+}
+.StorageContainer p span {
+  font-weight: 700;
+}

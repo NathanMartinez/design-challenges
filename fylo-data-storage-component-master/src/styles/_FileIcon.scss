@@ -1,0 +1,12 @@
+.FileIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: $Very_Dark_Blue;
+  border-radius: 1rem;
+}
+.FileIcon:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
