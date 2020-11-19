@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+:root {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  color: #494c5f;
+  width: 100%;
+  text-align: center;
+  -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.Card h4 {
+  font-size: 1.3rem;
+  color: #6d708d;
+}
+
+.Card .price-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.Card .price-container small {
+  font-size: 2.5rem;
+}
+
+.Card .price-container h1 {
+  font-size: 4.5rem;
+}
+
+.Card .info-container {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #b3b5c6;
+}
+
+.Card .info-container .info-section {
+  border-top: 1px solid #b3b5c6;
+  padding: 1rem;
+  width: 100%;
+  color: #6d708d;
+}
+
+.Card button {
+  border: none;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to bottom right, #a3a8f0, #696fdd);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  outline: none;
+}
+
+.Card.accent {
+  background: -webkit-gradient(linear, left top, right bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to bottom right, #a3a8f0, #696fdd);
+  color: #fff;
+}
+
+.Card.accent h4 {
+  color: #fff;
+}
+
+.Card.accent .info-container {
+  border-bottom: 1px solid #fff;
+}
+
+.Card.accent .info-container .info-section {
+  border-top: 1px solid #fff;
+  color: #fff;
+}
+
+.Card.accent button {
+  color: #696fdd;
+  background: #fff;
+}
+
+.App {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem 2rem;
+  background: #f6f6fe;
+  background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
+  background-position: top -40px right -190px, bottom;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=main.css.map */

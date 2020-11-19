@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+// Colors
+
+// Primary
+
+$Linear_Gradient: linear-gradient(
+  to bottom right,
+  hsl(236, 72%, 79%),
+  hsl(237, 63%, 64%)
+);
+
+// Neutral
+
+$Very_Light_Grayish_Blue: hsl(240, 78%, 98%);
+$Light_Grayish_Blue: hsl(234, 14%, 74%);
+$Grayish_Blue: hsl(233, 13%, 49%);
+$Dark_Grayish_Blue: hsl(232, 13%, 33%);
+
+:root {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "./Card";
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: $Very_Light_Grayish_Blue;
+  background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
+  background-position: top -40px right -190px, bottom;
+  background-repeat: no-repeat;
+}
