@@ -39,6 +39,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin: 1.5rem 0;
+  color: #6d708d;
 }
 
 .Card .price-container small {
@@ -76,6 +77,13 @@
   outline: none;
 }
 
+.Card button:hover {
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #696fdd;
+  color: #696fdd;
+}
+
 .Card.accent {
   background: -webkit-gradient(linear, left top, right bottom, from(#a3a8f0), to(#696fdd));
   background: linear-gradient(to bottom right, #a3a8f0, #696fdd);
@@ -83,6 +91,11 @@
 }
 
 .Card.accent h4 {
+  color: #fff;
+}
+
+.Card.accent .price-container h1,
+.Card.accent .price-container small {
   color: #fff;
 }
 
@@ -98,6 +111,56 @@
 .Card.accent button {
   color: #696fdd;
   background: #fff;
+}
+
+.Card.accent button:hover {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.toggle-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0 4rem 0;
+  color: #6d708d;
+}
+
+.toggle-container .toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 1rem;
+  background: -webkit-gradient(linear, left top, right bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to bottom right, #a3a8f0, #696fdd);
+  margin: 0 2rem;
+  padding: 0 0.3rem;
+}
+
+.toggle-container .toggle.monthly {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.toggle-container .toggle .toggle-dot {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.toggle-container .toggle .toggle-dot:hover {
+  cursor: pointer;
 }
 
 .App {
@@ -117,5 +180,9 @@
   background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
   background-position: top -40px right -190px, bottom;
   background-repeat: no-repeat;
+}
+
+.App h1 {
+  color: #6d708d;
 }
 /*# sourceMappingURL=main.css.map */

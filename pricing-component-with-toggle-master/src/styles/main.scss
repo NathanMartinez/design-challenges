@@ -29,6 +29,7 @@ $Dark_Grayish_Blue: hsl(232, 13%, 33%);
 }
 
 @import "./Card";
+@import "./Toggle";
 
 .App {
   height: 100vh;
@@ -40,4 +41,7 @@ $Dark_Grayish_Blue: hsl(232, 13%, 33%);
   background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
   background-position: top -40px right -190px, bottom;
   background-repeat: no-repeat;
+  h1 {
+    color: $Grayish_Blue;
+  }
 }

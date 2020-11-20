@@ -1,0 +1,28 @@
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0 4rem 0;
+  color: $Grayish_Blue;
+  .toggle {
+    display: flex;
+    align-items: center;
+    width: 4rem;
+    height: 2rem;
+    border-radius: 1rem;
+    background: $Linear_Gradient;
+    margin: 0 2rem;
+    padding: 0 0.3rem;
+    &.monthly {
+      justify-content: flex-end;
+    }
+    .toggle-dot {
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background: #fff;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
