@@ -1,12 +1,12 @@
 import React from "react";
 
-const Card = ({
+const Card = ({data: {
   packageType,
   price,
   storageAmt,
   userCount,
   sendAmt,
-  accent,
+  accent,}
 }) => {
   return (
     <div className={accent ? "Card accent" : "Card"}>

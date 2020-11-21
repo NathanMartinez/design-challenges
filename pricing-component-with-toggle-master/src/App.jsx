@@ -10,17 +10,9 @@ function App() {
     <div className="App">
       <h1>Our Pricing</h1>
       <Toggle monthly={monthly} setMonthly={setMonthly} />
-      {monthly ? Monthly.map((cardData, i) => <Card key={i} packageType={cardData.packageType}
-  price={cardData.price}
-  storageAmt={cardData.storageAmt}
-  userCount={cardData.userCount}
-  sendAmt={cardData.sendAmt}
-  accent={cardData.accent}/>) : Annually.map((cardData, i) => <Card key={i} packageType={cardData.packageType}
-  price={cardData.price}
-  storageAmt={cardData.storageAmt}
-  userCount={cardData.userCount}
-  sendAmt={cardData.sendAmt}
-  accent={cardData.accent}/>)}
+      {monthly
+        ? Monthly.map((cardData, i) => <Card key={i} data={cardData} />)
+        : Annually.map((cardData, i) => <Card key={i} data={cardData} />)}
     </div>
   );
 }
